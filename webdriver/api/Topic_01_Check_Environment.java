@@ -40,6 +40,11 @@ public class Topic_01_Check_Environment {
 		// Login form displayed
 		Assert.assertTrue(driver.findElement(By.xpath("//form[@name='frmLogin']")).isDisplayed());
 	}
+	
+	@Test
+	public void TC_04_Add_New_Account() {
+		
+	}
 
 	@AfterClass
 	public void afterClass() {
