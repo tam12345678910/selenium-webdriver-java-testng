@@ -16,6 +16,7 @@ public class Topic_02_Xpath_Css_Part_III {
 
 	@BeforeClass
 	public void beforeClass() {
+		
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -104,7 +105,7 @@ public class Topic_02_Xpath_Css_Part_III {
 		
 		driver.findElement(By.id("lastname")).sendKeys("Tam");
 		
-		Random randomGenerator = new Random();  
+		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);   
 		
 		driver.findElement(By.id("email_address")).sendKeys("username"+ randomInt +"@gmail.com");
