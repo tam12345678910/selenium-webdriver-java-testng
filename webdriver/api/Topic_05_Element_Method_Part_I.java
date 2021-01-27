@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -113,13 +112,6 @@ public class Topic_05_Element_Method_Part_I {
 		
 		Assert.assertTrue(driver.findElement(By.id("under_18")).isSelected());
 		Assert.assertFalse(driver.findElement(By.id("java")).isSelected());
-		
-		
-	}
-	
-	@Test
-	public void TC_04_Page_Source() {
-		
 		
 		
 	}
