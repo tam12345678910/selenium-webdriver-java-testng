@@ -40,7 +40,7 @@ public class Topic_08_Custom_Dropdow {
 		driver.manage().window().maximize();
 	}
 
-	// @Test
+	@Test
 	public void TC_01_Jquery() {
 		driver.get("https://jqueryui.com/resources/demos/selectmenu/default.html");
 
@@ -50,7 +50,7 @@ public class Topic_08_Custom_Dropdow {
 				"19");
 	}
 
-	//@Test
+	@Test
 	public void TC_02_Angular() {
 
 		driver.get(
@@ -60,7 +60,7 @@ public class Topic_08_Custom_Dropdow {
 		Assert.assertEquals(getAngularDropdownSelectedText(), "Basketball");
 	}
 
-	//@Test
+	@Test
 	public void TC_03_React() {
 		driver.get("https://react.semantic-ui.com/maximize/dropdown-example-selection/");
 
@@ -69,7 +69,7 @@ public class Topic_08_Custom_Dropdow {
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='divider text']")).getText(), "Christian");
 	}
 
-	//@Test
+	@Test
 	public void TC_04_VueJs() {
 		driver.get("https://mikerodham.github.io/vue-dropdowns/");
 
@@ -78,7 +78,7 @@ public class Topic_08_Custom_Dropdow {
 		Assert.assertEquals(driver.findElement(By.xpath("//li[@class='dropdown-toggle']")).getText(), "Second Option");
 	}
 
-	//@Test
+	@Test
 	public void TC_05_Editable() {
 		driver.get("https://react.semantic-ui.com/maximize/dropdown-example-search-selection/");
 
